@@ -141,3 +141,38 @@
 
 // // 07
 
+// let str = 'I am Tanmoy';
+// let vowel = 'aeiouAEIOU';
+// let count = 0;
+
+// for(let i = 0; i < str.length; i++){
+//     let letter = str[i];
+    
+//     if(vowel.includes(letter)){
+//         console.log(letter, '= vowel')
+//         count++;
+//     }else{
+//         console.log(letter);
+//     }
+// }console.log('Total Vowel', count);
+
+// // Function Method
+function checkVowel(str){
+    let vowel = 'aeiouAEIOU'
+    let count = 0;
+
+    for(let i = 0; i < str.length; i++){
+    let letter = str[i];
+    
+    if(vowel.includes(letter)){
+        console.log(letter, '= vowel')
+        count++;
+    }else{
+        console.log(letter);
+    }
+}
+return count;
+}
+
+let vowelCount = checkVowel('This is me Tanmoy');
+console.log('Total Vowel Found:',vowelCount);
