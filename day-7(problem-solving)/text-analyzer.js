@@ -8,14 +8,21 @@ let specialCharCount = 0;
 let numberCount = 0;
 let consonantCount = 0;
 
-// // loopdd
+// // loop
 for(let i = 0; i < str.length; i++){
     let letter = str[i];
+    let lowerLetter = letter.toLowerCase();
 
-            // // vowel Checking
-    if(vowels.includes(letter.toLowerCase())){
+            // // Vowel Checking
+    if(vowels.includes(lowerLetter)){
         console.log(letter, 'is => Vowel');
         vowelCount++;
+    }
+
+            // // Consonant Checking
+    else if(/[a-z]/.test(lowerLetter)){
+        console.log(letter, 'is => Consonant');
+        consonantCount++;
     }
             // // Space Checking
     else if(/\s/.test(letter)){
@@ -23,11 +30,6 @@ for(let i = 0; i < str.length; i++){
         spaceCount++;
     }
     
-            // // Special Character Checking
-    else if(/[^a-zA-Z0-9\s]/.test(letter)){
-        console.log(letter, 'is => Special Character');
-        specialCharCount++;
-    }
     
             // // Number Checking
     else if(/[0-9]/.test(letter)){
@@ -35,10 +37,10 @@ for(let i = 0; i < str.length; i++){
         numberCount++;
     }
     
-            // // Consonant Checking
+            // // Special Character Checking
     else{
-        console.log(letter, 'is => Consonant')
-        consonantCount ++;
+        console.log(letter, 'is => Special Character');
+        specialCharCount++;
     }
 }
 
