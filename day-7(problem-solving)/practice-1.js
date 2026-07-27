@@ -157,22 +157,60 @@
 // }console.log('Total Vowel', count);
 
 // // Function Method
-function checkVowel(str){
-    let vowel = 'aeiouAEIOU'
-    let count = 0;
+// function checkVowel(str){
+//     let vowel = 'aeiouAEIOU'
+//     let count = 0;
 
-    for(let i = 0; i < str.length; i++){
-    let letter = str[i];
+//     for(let i = 0; i < str.length; i++){
+//     let letter = str[i];
     
-    if(vowel.includes(letter)){
-        console.log(letter, '= vowel')
-        count++;
-    }else{
-        console.log(letter);
-    }
-}
-return count;
-}
+//     if(vowel.includes(letter)){
+//         console.log(letter, '= vowel')
+//         count++;
+//     }else{
+//         console.log(letter);
+//     }
+// }
+// return count;
+// }
 
-let vowelCount = checkVowel('This is me Tanmoy');
-console.log('Total Vowel Found:',vowelCount);
+// let vowelCount = checkVowel('This is me Tanmoy');
+// console.log('Total Vowel Found:',vowelCount);
+
+//   08  (palindrome)
+
+// // without function
+
+// let text = 'amaabaaa';
+// let reverseText = '';
+// for(let i = 0; i < text.length; i++){
+//     reverseText = text[i] + reverseText;
+// }console.log(text)
+
+// if(reverseText === text){
+//     console.log('palindrome');
+// }else{
+//     console.log('Not Palindrome')
+// }
+
+// // with function
+
+// function isPalindrome(text){
+//     let reverseText = '';
+
+//     for(let i = 0; i < text.length; i++){
+//         let letter = text[i];
+//         reverseText = letter + reverseText;
+//     }
+//     console.log(reverseText)
+
+//     if(text.toLowerCase() === reverseText.toLowerCase()){
+//         return true;
+//     }else{
+//         return false;
+//     }
+
+//     // // return text.toLowerCase() === reverseText.toLowerCase();      //without if else method
+// }
+
+// console.log(isPalindrome('Madam'))
